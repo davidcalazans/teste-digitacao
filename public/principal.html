@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="materialize/fonts/roboto/Roboto-Regular.woff">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/libs/selectize.default.css">
+        <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Velocidade de Digitação</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="center-align">TREINO DE DIGITAÇÃO</h1>
+            <p class="frase center">Lorem ipsum magna aliquam potenti erat class
+              lobortis scelerisque augue curabitur elit nullam mauris elementum
+              etiam, hendrerit pharetra amet id justo tincidunt rutrum.
+              hac velit cursus auctor in donec aenean accumsan, cursus nulla.
+            </p>
+
+            <div class="center">
+                <img src="img/spinner.gif" id="spinner">
+                <p id="erro">Ocorreu um erro, tente novamente.</p>
+            </div>
+
+            <div class="center-align">
+                <ul>
+                  <li><span id="tfrase">0</span> palavras</li>
+                  <li><span id="tempo">30</span> segundos</li>
+                </ul>
+            <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+            </div>
+
+              <button class="waves-effect waves-light btn deep-purple darken-4" id="btn-reiniciar">Reiniciar Game</button>
+              <button class="waves-effect waves-light btn grey darken-3" id="btn-placar">Placar</button>
+              <button class="waves-effect waves-light btn green darken-4" id="btn-trocar">Frase Aleatória</button>
+              <button class="waves-effect waves-light btn teal accent-4" id="btn-busca">Buscar Frase</button>
+              <input type="number" id="frase-id" min="0" max="9" value="0">
+
+              <div class="select-usuarios">
+                <select id="usuarios" name="">
+
+                </select>
+              </div>
+
+                <a class="tooltip btn-floating waves-effect waves-light cyan" id="btn-salvar" title="Salvo com sucesso!">
+                  <i class="material-icons">save</i>
+                </a>
+
+            <div class="center-align">
+                <ul class="informacoes text-center">
+                    <li class="list-group-item"><span id="contador-caracter">0</span> caracteres</li>
+                    <li ><span id="contador-palavra">0</span> palavras</li>
+                </ul>
+            </div>
+
+            <section class="placar">
+              <h3>Placar</h3>
+              <table class="bordered striped">
+                  <thead>
+                      <tr>
+                          <th>Nome</th>
+                          <th>Número de palavras</th>
+                          <th>Remover</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+              </table>
+            </section>
+
+        </div>
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/placar.js"></script>
+        <script src="js/frase.js"></script>
+        <script src="js/selectize.js"></script>
+        <script src="js/tooltipster.bundle.min.js"></script>
+    </body>
+</html>
